@@ -8,9 +8,9 @@ public class Biblioteca{
         ListaDeLibros = _ListaDeLibros;
     }
 
-    //Metodos
+    //Metodo
     public void agregarLibro(){
-        
+
     }
 
     public void eliminarLibro(){
