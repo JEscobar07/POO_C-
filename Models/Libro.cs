@@ -5,11 +5,11 @@ public class Libro : Publicacion{
     //Atributos
     public Guid ISBN;
     public string Autor;
-    public char Genero;
+    public string Genero;
     public double Precio;
     
     //Constructor
-    public Libro(string _titulo,DateOnly _AñoDePublicacion, string _autor, char _genero, double _precio){
+    public Libro(string _titulo,DateOnly _AñoDePublicacion, string _autor, string _genero, double _precio){
         ISBN = Guid.NewGuid();
         Titulo = _titulo;
         AñoDePublicacion = _AñoDePublicacion;

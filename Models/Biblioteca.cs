@@ -5,8 +5,8 @@ public class Biblioteca{
     //Atributos
     List<Libro> ListaDeLibros;
     //Constructor
-    public Biblioteca( List<Libro> _ListaDeLibros){
-        ListaDeLibros = _ListaDeLibros;
+    public Biblioteca( ){
+        ListaDeLibros = new List<Libro>();
     }
 
     //Metodo
