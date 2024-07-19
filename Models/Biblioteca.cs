@@ -42,8 +42,17 @@ public class Biblioteca{
         }
     }
 
-    public void DescuentoLibro(){
-        var libroBuscado = ListaDeLibros.
+    public void DescuentoLibro(Libro librito){
+        Console.WriteLine("Ingresa el descuento:");
+        double descuento = Convert.ToDouble(Console.ReadLine());
+        foreach (var item in ListaDeLibros)
+        {
+            if(item.Titulo.Equals(librito.Titulo,StringComparison.OrdinalIgnoreCase)){
+                item.Precio = item.Precio - (item.Precio * descuento);
+                Console.WriteLine($"El nuevo precio de el libro {item.Titulo} es: "+ item.Precio);
+            }
+        }
+
     }
 
     public void mensaje(string mensajito){
