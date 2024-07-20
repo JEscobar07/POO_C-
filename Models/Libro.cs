@@ -5,11 +5,11 @@ public class Libro : Publicacion{
     //Atributos
     public Guid ISBN;
     public string Autor;
-    public char Genero;
+    public string Genero;
     public double Precio;
     
     //Constructor
-    public Libro(string _titulo,DateOnly _AñoDePublicacion, string _autor, char _genero, double _precio){
+    public Libro(string _titulo,DateOnly _AñoDePublicacion, string _autor, string _genero, double _precio){
         ISBN = Guid.NewGuid();
         Titulo = _titulo;
         AñoDePublicacion = _AñoDePublicacion;
@@ -20,6 +20,6 @@ public class Libro : Publicacion{
 
     //Metodos
     public void DetalleDelLibro(){
-        Console.WriteLine($"Datos del libro:\nID: {ISBN}\nTitulo: {Titulo}\nAño de publicacion: {AñoDePublicacion}\nAutor: {Autor}\nISBN: {ISBN}\nGenero: {Genero}\nPrecio: {Precio}");
+        Console.WriteLine($"\nDatos del libro:\nID: {ISBN}\nTitulo: {Titulo}\nAño de publicacion: {AñoDePublicacion}\nAutor: {Autor}\nISBN: {ISBN}\nGenero: {Genero}\nPrecio: {Precio}\n");
     }
 }
