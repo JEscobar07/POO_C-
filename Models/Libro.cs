@@ -20,6 +20,6 @@ public class Libro : Publicacion{
 
     //Metodos
     public void DetalleDelLibro(){
-        Console.WriteLine($"Datos del libro:\nID: {ISBN}\nTitulo: {Titulo}\nAño de publicacion: {AñoDePublicacion}\nAutor: {Autor}\nISBN: {ISBN}\nGenero: {Genero}\nPrecio: {Precio}");
+        Console.WriteLine($"\nDatos del libro:\nID: {ISBN}\nTitulo: {Titulo}\nAño de publicacion: {AñoDePublicacion}\nAutor: {Autor}\nISBN: {ISBN}\nGenero: {Genero}\nPrecio: {Precio}\n");
     }
 }
